@@ -1,14 +1,18 @@
 {
+  "homepage": "https://jiansen02.github.io/react-tic-tac-toe",
   "name": "react.dev",
   "version": "0.0.0",
   "main": "/src/index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "firebase": "^12.12.1",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-scripts": "^5.0.0"
